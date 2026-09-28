@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muslim Scientists History</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7f6;
+    color:#222;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#063f3a,#087f70);
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
+
+header h1{
+    font-size:36px;
+    margin-bottom:12px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/* NAVBAR */
+nav{
+    background:#032e2a;
+    padding:16px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#ffd166;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#087f70,#043f3a);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* SECTIONS */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:55px 20px;
+}
+
+.title{
+    text-align:center;
+    color:#075e54;
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+/* SEARCH */
+.search{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.search input{
+    width:90%;
+    max-width:550px;
+    padding:15px 20px;
+    border:2px solid #087f70;
+    border-radius:30px;
+    font-size:16px;
+    outline:none;
+}
+
+/* CARDS */
+.scientists{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.10);
+    transition:0.3s;
+    border-top:5px solid #087f70;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#075e54;
+    font-size:23px;
+    margin-bottom:8px;
+}
+
+.date{
+    color:#777;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+.field{
+    margin-top:15px;
+    font-weight:bold;
+    color:#087f70;
+}
+
+/* TIMELINE */
+.timeline{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.timeline-item{
+    border-left:4px solid #087f70;
+    padding:10px 20px;
+    margin-bottom:20px;
+}
+
+.timeline-item h3{
+    color:#075e54;
+    margin-bottom:7px;
+}
+
+/* ABOUT */
+.about{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    line-height:1.8;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer{
+    background:#032e2a;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer p{
+    margin:7px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+    header h1{
+        font-size:28px;
+    }
+
+    .hero h2{
+        font-size:29px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    nav a{
+        margin:5px;
+        display:inline-block;
+    }
+
+    .title{
+        font-size:27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Muslim Scientists History</h1>
+    <p>Discover the Golden Age of Science</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#scientists">Scientists</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#about">About</a>
+</nav>
+
+<section class="hero" id="home">
+
+    <h2>Muslim Scientists Who Changed the World</h2>
+
+    <p>
+        Explore the lives, discoveries and scientific contributions
+        of famous Muslim scholars throughout history.
+    </p>
+
+</section>
+
+
+<section class="container" id="scientists">
+
+<h2 class="title">Famous Muslim Scientists</h2>
+
+<div class="search">
+
+<input
+type="text"
+id="search"
+placeholder="🔎 Search scientist..."
+onkeyup="searchScientists()">
+
+</div>
+
+
+<div class="scientists">
+
+<!-- AL KHWARIZMI -->
+<div class="card">
+
+<div class="icon">📐</div>
+
+<h3>Al-Khwarizmi</h3>
+
+<div class="date">c. 780 – c. 850</div>
+
+<p>
+Muhammad ibn Musa al-Khwarizmi was a famous mathematician,
+astronomer and scholar. His writings played an important role
+in the development of algebra and mathematics.
+</p>
+
+<div class="field">
+Field: Mathematics & Astronomy
+</div>
+
+</div>
+  <a href="alkhwarizmi.html"
+style="display:block;
+margin-top:20px;
+background:#087f70;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;">
+Read More →
+</a>
+
+
+<!-- IBN AL HAYTHAM -->
+<div class="card">
+
+<div class="icon">🔬</div>
+
+<h3>Ibn al-Haytham</h3>
+
+<div class="date">c. 965 – c. 1040</div>
+<p>
+Ibn al-Haytham made important contributions to optics,
+light and vision. His experimental approach influenced
+the development of scientific investigation.
+</p>
+
+<div class="field">
+Field: Optics & Physics
+</div>
+
+</div>
+  <a href="ibn-al-haytham.html"
+style="display:block;
+margin-top:20px;
+background:#087f70;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;">
+Read More →
+</a>
+
+
+<!-- IBN SINA -->
+<div class="card">
+
+<div class="icon">⚕️</div>
+
+<h3>Ibn Sina</h3>
+
+<div class="date">980 – 1037</div>
+
+<p>
+Ibn Sina, also known as Avicenna, was a physician and
+philosopher. His famous medical writings were studied
+for centuries.
+</p>
+
+<div class="field">
+Field: Medicine & Philosophy
+</div>
+
+</div>
+  <a href="ibn-sina.html"
+style="display:block;
+margin-top:20px;
+background:#087f70;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;">
+Read More →
+</a>
+
+
+<!-- AL RAZI -->
+<div class="card">
+
+<div class="icon">🧪</div>
+
+<h3>Al-Razi</h3>
+
+<div class="date">c. 854 – 925/935</div>
+
+<p>
+Abu Bakr al-Razi was an influential physician and scholar.
+He wrote important works on medicine and chemistry.
+</p>
+
+<div class="field">
+Field: Medicine & Chemistry
+</div>
+
+</div>
+  <a href="al-razi.html"
+style="display:block;
+margin-top:20px;
+background:#087f70;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;">
+Read More →
+</a>
+
+
+<!-- AL BIRUNI -->
+<div class="card">
+
+<div class="icon">🌍</div>
+
+<h3>Al-Biruni</h3>
+
+<div class="date">973 – c. 1050</div>
+
+<p>
+Al-Biruni studied astronomy, mathematics, geography and
+many other fields. He made important observations about
+the Earth and celestial bodies.
+</p>
+
+<div class="field">
+Field: Astronomy & Geography
+</div>
+
+</div>
+  <a href="al-biruni.html"
+style="display:block;
+margin-top:20px;
+background:#087f70;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;">
+Read More →
+</a>
+
+
+<!-- AL ZAHRAWI -->
+<div class="card">
+
+<div class="icon">🏥</div>
+
+<h3>Al-Zahrawi</h3>
+
+<div class="date">c. 936 – 1013</div>
+
+<p>
+Al-Zahrawi was a prominent physician and surgeon.
+His medical encyclopedia described surgical techniques
+and instruments.
+</p>
+
+<div class="field">
+Field: Medicine & Surgery
+</div>
+
+</div>
+  <a href="al-zahrawi.html"
+style="display:block;
+margin-top:20px;
+background:#087f70;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;">
+Read More →
+</a>
+
+
+<!-- IBN AL NAFIS -->
+<div class="card">
+
+<div class="icon">❤️</div>
+
+<h3>Ibn al-Nafis</h3>
+
+<div class="date">1213 – 1288</div>
+
+<p>
+Ibn al-Nafis was a physician who provided an important
+description of pulmonary circulation in his medical works.
+</p>
+
+<div class="field">
+Field: Medicine & Anatomy
+</div>
+
+</div>
+  <a href="ibn-al-nafis.html"
+style="display:block;
+margin-top:20px;
+background:#087f70;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;">
+Read More →
+</a>
+
+
+<!-- AL JAZARI -->
+<div class="card">
+
+<div class="icon">⚙️</div>
+
+<h3>Al-Jazari</h3>
+
+<div class="date">c. 1136 – 1206</div>
+
+<p>
+Al-Jazari was an engineer and inventor known for his
+mechanical devices, water-raising machines and automata.
+</p>
+
+<div class="field">
+Field: Engineering & Mechanics
+</div>
+
+</div>
+
+</div>
+  <a href="al-jazari.html"
+style="display:block;
+margin-top:20px;
+background:#087f70;
+color:white;
+text-align:center;
+padding:12px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;">
+Read More →
+</a>
+
+</section>
+
+
+<section class="container" id="timeline">
+
+<h2 class="title">Historical Timeline</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>780 – 850</h3>
+<p>Al-Khwarizmi — Mathematics and Astronomy</p>
+</div>
+
+<div class="timeline-item">
+<h3>854 – 935</h3>
+<p>Al-Razi — Medicine and Chemistry</p>
+</div>
+
+<div class="timeline-item">
+<h3>965 – 1040</h3>
+<p>Ibn al-Haytham — Optics and Physics</p>
+</div>
+
+<div class="timeline-item">
+<h3>973 – 1050</h3>
+<p>Al-Biruni — Astronomy and Geography</p>
+</div>
+
+<div class="timeline-item">
+<h3>980 – 1037</h3>
+<p>Ibn Sina — Medicine and Philosophy</p>
+</div>
+
+<div class="timeline-item">
+<h3>1136 – 1206</h3>
+<p>Al-Jazari — Engineering and Mechanics</p>
+</div>
+
+<div class="timeline-item">
+<h3>1213 – 1288</h3>
+<p>Ibn al-Nafis — Medicine and Anatomy</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="container" id="about">
+
+<h2 class="title">About This Website</h2>
+
+<div class="about">
+
+<p>
+<strong>Muslim Scientists History</strong> is an educational
+website about the history of scientific scholarship in the
+Islamic world.
+</p>
+
+<br>
+
+<p>
+The website introduces famous scholars and explains their
+fields of study and contributions in a simple way.
+</p>
+
+<br>
+
+<p>
+Our goal is to make the history of science interesting and
+easy to explore for students and visitors.
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p><strong>Muslim Scientists History</strong></p>
+
+<p>Educational Website © 2026</p>
+
+</footer>
+
+
+<script>
+
+function searchScientists(){
+
+    let input =
+    document.getElementById("search").value.toLowerCase();
+
+    let cards =
+    document.querySelectorAll(".card");
+
+    cards.forEach(function(card){
+
+        let text =
+        card.innerText.toLowerCase();
+
+        if(text.includes(input)){
+            card.style.display = "";
+        }
+        else{
+            card.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
